@@ -1,4 +1,10 @@
-# OpenAI - Developer
+# GuillaumeAI - Developer
+
+
+----
+Original README
+----
+
 
 This VSCode Extension queries the OpenAI models [OpenAI](https://openai.com/blog). The models currently implemented are ChatGPT and Codex. Other OpenAI models will be coming soon.
 
