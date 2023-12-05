@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu

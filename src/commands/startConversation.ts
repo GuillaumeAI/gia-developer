@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -17,7 +17,7 @@ import { sendQuery } from './sendQuery';
 export async function startConversation(): Promise<void> {
 
     const q = await vscode.window.showInputBox({
-        title: "OpenAI Developer: Start Conversation",
+        title: "GIA Developer: Start Conversation",
         prompt: "Ask anything",
         ignoreFocusOut: true,
         placeHolder: "Query",

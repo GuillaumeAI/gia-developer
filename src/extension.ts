@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -26,32 +26,32 @@ export function activate(context: vscode.ExtensionContext) {
 
 	ext.context = context;
 
-	const outputChannel = vscode.window.createOutputChannel("OpenAI Developer");
+	const outputChannel = vscode.window.createOutputChannel("GIA Developer");
 	ext.outputChannel = outputChannel;
 	context.subscriptions.push(outputChannel);
 
 	const provider = new ChatProvider();
-	vscode.window.registerWebviewViewProvider("openai-developer-chatview", provider, {
+	vscode.window.registerWebviewViewProvider("gia-developer-chatview", provider, {
 		webviewOptions: { retainContextWhenHidden: true }
 	});
 
-	let disposableChangeAPIKey = vscode.commands.registerCommand('openai-developer.changeAPIKey', async () => {
+	let disposableChangeAPIKey = vscode.commands.registerCommand('gia-developer.changeAPIKey', async () => {
 		await changeAPIKey(true);
 	});
 
-	let disposableStartConversation = vscode.commands.registerCommand('openai-developer.startConversation', async () => {
+	let disposableStartConversation = vscode.commands.registerCommand('gia-developer.startConversation', async () => {
 		await startConversation();
 	});
 
-	let disposableExplainCode = vscode.commands.registerCommand('openai-developer.explainCode', async () => {
+	let disposableExplainCode = vscode.commands.registerCommand('gia-developer.explainCode', async () => {
 		await explainCode();
 	});
 
-	let disposableFindProblem = vscode.commands.registerCommand('openai-developer.findProblem', async () => {
+	let disposableFindProblem = vscode.commands.registerCommand('gia-developer.findProblem', async () => {
 		await findProblem();
 	});
 
-	let disposableGenerateImage = vscode.commands.registerCommand('openai-developer.generateImage', async () => {
+	let disposableGenerateImage = vscode.commands.registerCommand('gia-developer.generateImage', async () => {
 		await generateImage();
 	});
 

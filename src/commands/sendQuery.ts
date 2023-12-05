@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -19,9 +19,9 @@ import { changeAPIKey } from './changeAPIKey';
 export async function sendQuery(query: string): Promise<void> {
 
     let config = vscode.workspace.getConfiguration();
-    const model = config.get("openai-developer.model") as string | null;
-    const maxTokens = config.get("openai-developer.maxTokens") as number | 1024;
-    const temperature = config.get("openai-developer.temperature") as number | 0.5;
+    const model = config.get("gia-developer.model") as string | null;
+    const maxTokens = config.get("gia-developer.maxTokens") as number | 1024;
+    const temperature = config.get("gia-developer.temperature") as number | 0.5;
 
     const key = await changeAPIKey();
     if (key) {

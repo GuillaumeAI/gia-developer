@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -43,7 +43,7 @@ export class ChatProvider implements vscode.WebviewViewProvider {
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>OpenAI Developer</title>
+                    <title>GIA Developer</title>
                     <style>
                     .container {
                         padding: 0.2rem 0.2rem;

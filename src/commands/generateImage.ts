@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/mrsahugit/openai-developer
+ * https://github.com/GuillaumeAI/gia-developer
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -18,7 +18,7 @@ import { changeAPIKey } from './changeAPIKey';
 export async function generateImage(): Promise<void> {
 
     const q = await vscode.window.showInputBox({
-        title: "OpenAI Developer: Generate Image",
+        title: "GIA Developer: Generate Image",
         prompt: "Provide description of the desired image(s). Max 1000 characters.",
         ignoreFocusOut: true,
         placeHolder: "Description",
