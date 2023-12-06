@@ -32,8 +32,8 @@ export async function sendQuery(query: string): Promise<void> {
 
     const client = new OpenAIService();
 
-    //
-    if (model === "gpt-turbo" || model === "gpt-3.5-turbo-1106" || model === "gpt-4" || model === "gpt-4-32k" || model === "gpt-4-1106-preview") {
+    //|| model === "gpt-3.5-turbo-1106" || model === "gpt-4" || model === "gpt-4-32k" || model === "gpt-4-1106-preview"
+    if (model === "gpt-turbo" ) {
         const response = await vscode.window.withProgress({
             location: vscode.ProgressLocation.Notification,
             title: 'Querying ChatGPT. Please wait...',
