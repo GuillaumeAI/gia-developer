@@ -16,7 +16,7 @@ export enum Models {
     ChatGP4 = "gpt-4",
     ChatGP4k32 = "gpt-4-32k",
     ChatGP4p1106 = "gpt-4-1106-preview",
-    Codex = "code-davinci-002",
+    Codex = "code-davinci-002"
 }
 
 export interface ModelAPIResponse {
