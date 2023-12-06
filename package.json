@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/GuillaumeAI/giadeveloper"
   },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "jgwill",
   "engines": {
     "vscode": "^1.76.0"
@@ -122,7 +122,7 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "publish":"npm version patch && vsce publish"
+    "publish": "npm version patch && vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
