@@ -19,6 +19,7 @@ import { ChatProvider } from './views/ChatProvider';
 import { changeAPIKey } from './commands/changeAPIKey';
 import { startConversation } from './commands/startConversation';
 import { explainCode } from './commands/explainCode';
+import { summarizeText } from './commands/summarizeText';
 import { findProblem } from './commands/findProblem';
 import { generateImage } from './commands/generateImage';
 
@@ -47,6 +48,11 @@ export function activate(context: vscode.ExtensionContext) {
 		await explainCode();
 	});
 
+	
+	let disposableSummarizeText = vscode.commands.registerCommand('jgwilldevia.summarizeText', async () => {
+		await summarizeText();
+});
+
 	let disposableFindProblem = vscode.commands.registerCommand('giadeveloper.findProblem', async () => {
 		await findProblem();
 	});
@@ -55,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 		await generateImage();
 	});
 
-	context.subscriptions.push(disposableChangeAPIKey, disposableStartConversation, disposableExplainCode, disposableFindProblem, disposableGenerateImage);
+	context.subscriptions.push(disposableChangeAPIKey, disposableStartConversation, disposableExplainCode,disposableSummarizeText, disposableFindProblem, disposableGenerateImage);
 }
 
 export function deactivate() {}
