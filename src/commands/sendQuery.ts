@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/GuillaumeAI/gia-developer
+ * https://github.com/GuillaumeAI/giadeveloper
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -19,9 +19,9 @@ import { changeAPIKey } from './changeAPIKey';
 export async function sendQuery(query: string): Promise<void> {
 
     let config = vscode.workspace.getConfiguration();
-    const model = config.get("gia-developer.model") as string | null;
-    const maxTokens = config.get("gia-developer.maxTokens") as number | 1024;
-    const temperature = config.get("gia-developer.temperature") as number | 0.5;
+    const model = config.get("giadeveloper.model") as string | null;
+    const maxTokens = config.get("giadeveloper.maxTokens") as number | 1024;
+    const temperature = config.get("giadeveloper.temperature") as number | 0.5;
 
     const key = await changeAPIKey();
     if (key) {

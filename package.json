@@ -1,15 +1,15 @@
 {
-  "name": "gia-developer",
+  "name": "giadeveloper",
   "displayName": "GIA Developer",
   "description": "Integration with OpenAI models ChatGPT(GPT3.5), Codex and Image for Developer.",
   "license": "SEE LICENSE IN LICENSE.md",
   "icon": "resources/media/openai.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GuillaumeAI/gia-developer"
+    "url": "https://github.com/GuillaumeAI/giadeveloper"
   },
   "version": "0.0.4",
-  "publisher": "guillaumeisabelle",
+  "publisher": "jgwill",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -32,49 +32,49 @@
   "contributes": {
     "commands": [
       {
-        "command": "gia-developer.changeAPIKey",
+        "command": "giadeveloper.changeAPIKey",
         "title": "GIA Developer: Change API (OpenAI) key"
       },
       {
-        "command": "gia-developer.startConversation",
+        "command": "giadeveloper.startConversation",
         "title": "GIA Developer: Start Conversation"
       },
       {
-        "command": "gia-developer.explainCode",
+        "command": "giadeveloper.explainCode",
         "title": "GIA Developer: Explain the code"
       },
       {
-        "command": "gia-developer.findProblem",
+        "command": "giadeveloper.findProblem",
         "title": "GIA Developer: Why code is not working"
       },
       {
-        "command": "gia-developer.generateImage",
+        "command": "giadeveloper.generateImage",
         "title": "GIA Developer: Generate Image"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "gia-developer.startConversation",
+          "command": "giadeveloper.startConversation",
           "when": "editorTextFocus",
-          "group": "gia-developer-menu-group@1"
+          "group": "giadeveloper-menu-group@1"
         },
         {
-          "command": "gia-developer.explainCode",
+          "command": "giadeveloper.explainCode",
           "when": "editorHasSelection",
-          "group": "gia-developer-menu-group@2"
+          "group": "giadeveloper-menu-group@2"
         },
         {
-          "command": "gia-developer.findProblem",
+          "command": "giadeveloper.findProblem",
           "when": "editorHasSelection",
-          "group": "gia-developer-menu-group@3"
+          "group": "giadeveloper-menu-group@3"
         }
       ]
     },
     "configuration": {
       "title": "GIA Developer - Configurations",
       "properties": {
-        "gia-developer.model": {
+        "giadeveloper.model": {
           "order": 0,
           "markdownDescription": "The model (ChatGPT or Codex) to find answer for your queries. More pricing info at https://openai.com/pricing#chat",
           "type": "string",
@@ -92,13 +92,13 @@
             "A set of models that can understand and generate code, including translating natural language to code. This model is free and uses no OpenAI credits, but may produce lower quality results."
           ]
         },
-        "gia-developer.maxTokens": {
+        "giadeveloper.maxTokens": {
           "order": 1,
           "description": "Maximum number of tokens inside response per request",
           "type": "number",
           "default": 1024
         },
-        "gia-developer.temperature": {
+        "giadeveloper.temperature": {
           "order": 2,
           "description": "What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.",
           "type": "number",

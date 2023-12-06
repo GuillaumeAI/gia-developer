@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/GuillaumeAI/gia-developer
+ * https://github.com/GuillaumeAI/giadeveloper
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu

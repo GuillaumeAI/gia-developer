@@ -10,11 +10,11 @@ This VSCode Extension queries the OpenAI models [OpenAI](https://openai.com/blog
 
 Each model has different capabilities and price points. Prices are per 1,000 tokens. You can think of tokens as pieces of words, where 1,000 tokens are about 750 words. See [OpenAI Pricing](https://openai.com/pricing)
 
-> Missing something? Let us know by opening an issue on the [GitHub repository](https://github.com/GuillaumeAI/gia-developer/issues/new/choose)
+> Missing something? Let us know by opening an issue on the [GitHub repository](https://github.com/GuillaumeAI/giadeveloper/issues/new/choose)
 
 ## Features
 
-<img src="https://raw.githubusercontent.com/GuillaumeAI/gia-developer/main/resources/media/help.gif">
+<img src="https://raw.githubusercontent.com/GuillaumeAI/giadeveloper/main/resources/media/help.gif">
 
 ### Start Conversation
 
@@ -27,7 +27,7 @@ Use the "GIA Developer: Start Conversation" command in the Command Palette:
 
 ### Explain the code
 
-<img src="https://raw.githubusercontent.com/GuillaumeAI/gia-developer/main/resources/media/explain-code.png">
+<img src="https://raw.githubusercontent.com/GuillaumeAI/giadeveloper/main/resources/media/explain-code.png">
 
 Use the "GIA Developer: Explain the code" command in the Command Palette:
 
@@ -53,7 +53,7 @@ Once your OpenAI API key has been set you can update it using the "GIA Developer
 
 ### Generate Image
 
-<img src="https://raw.githubusercontent.com/GuillaumeAI/gia-developer/main/resources/media/generate-image.png">
+<img src="https://raw.githubusercontent.com/GuillaumeAI/giadeveloper/main/resources/media/generate-image.png">
 
 To generate desired image(s) from a text description
 
@@ -81,10 +81,10 @@ To find your OpenAI API key:
 In order to switch between the models ChatGPT and Codex, follow these instructions:
 
 1. `Ctrl` + `,` to open Preferences.
-2. Search for gia-developer.model.
+2. Search for giadeveloper.model.
 3. Use the dropdown to switch between ChatGPT and Codex.
 
-<img src="https://raw.githubusercontent.com/GuillaumeAI/gia-developer/main/resources/media/settings.png">
+<img src="https://raw.githubusercontent.com/GuillaumeAI/giadeveloper/main/resources/media/settings.png">
 
 ### Maximum Tokens
 
@@ -92,7 +92,7 @@ To set the maximum number of tokens for each request follow these instructions:
 > The maximum number of tokens to generate in the chat completion. The total length of input tokens and generated tokens is limited by the model's context length. 1,000 tokens are about 750 words.
 
 1. `Ctrl` + `,` to open Preferences.
-2. Search for gia-developer.maxTokens.
+2. Search for giadeveloper.maxTokens.
 3. Use a number between 0 to Infinity. Default is set to 1024.
 
 ### Temperature
@@ -101,7 +101,7 @@ To set the temperature follow these instructions:
 > What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.
 
 1. `Ctrl` + `,` to open Preferences.
-2. Search for gia-developer.temperature.
+2. Search for giadeveloper.temperature.
 3. Use a number between 0 to 2. Default is set to 0.5.
 
 ## Commands

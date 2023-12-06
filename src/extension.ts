@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/GuillaumeAI/gia-developer
+ * https://github.com/GuillaumeAI/giadeveloper
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -31,27 +31,27 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(outputChannel);
 
 	const provider = new ChatProvider();
-	vscode.window.registerWebviewViewProvider("gia-developer-chatview", provider, {
+	vscode.window.registerWebviewViewProvider("giadeveloper-chatview", provider, {
 		webviewOptions: { retainContextWhenHidden: true }
 	});
 
-	let disposableChangeAPIKey = vscode.commands.registerCommand('gia-developer.changeAPIKey', async () => {
+	let disposableChangeAPIKey = vscode.commands.registerCommand('giadeveloper.changeAPIKey', async () => {
 		await changeAPIKey(true);
 	});
 
-	let disposableStartConversation = vscode.commands.registerCommand('gia-developer.startConversation', async () => {
+	let disposableStartConversation = vscode.commands.registerCommand('giadeveloper.startConversation', async () => {
 		await startConversation();
 	});
 
-	let disposableExplainCode = vscode.commands.registerCommand('gia-developer.explainCode', async () => {
+	let disposableExplainCode = vscode.commands.registerCommand('giadeveloper.explainCode', async () => {
 		await explainCode();
 	});
 
-	let disposableFindProblem = vscode.commands.registerCommand('gia-developer.findProblem', async () => {
+	let disposableFindProblem = vscode.commands.registerCommand('giadeveloper.findProblem', async () => {
 		await findProblem();
 	});
 
-	let disposableGenerateImage = vscode.commands.registerCommand('gia-developer.generateImage', async () => {
+	let disposableGenerateImage = vscode.commands.registerCommand('giadeveloper.generateImage', async () => {
 		await generateImage();
 	});
 

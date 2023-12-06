@@ -1,6 +1,6 @@
 /**
  * @author Manas Sahu
- * https://github.com/GuillaumeAI/gia-developer
+ * https://github.com/GuillaumeAI/giadeveloper
  *
  * @license
  * Copyright (c) 2023 - Present, Manas Sahu
@@ -17,7 +17,7 @@ import { sendQuery } from './sendQuery';
 export async function explainCode(): Promise<void> {
 
     let config = vscode.workspace.getConfiguration();
-    const model = config.get("gia-developer.model") as string | null;
+    const model = config.get("giadeveloper.model") as string | null;
 
     const selectedCode = vscode.window.activeTextEditor?.document.getText(
         vscode.window.activeTextEditor?.selection,
