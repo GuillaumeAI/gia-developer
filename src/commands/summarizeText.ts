@@ -24,7 +24,7 @@ export async function summarizeText(): Promise<void> {
     );
 
     if (selectedCode) { 
-        await sendQuery((model === "gpt-turbo") ? "Summarize this:\n" + selectedCode : selectedCode + "\n");
+        await sendQuery((model === "gpt-turbo" || model === "gpt-3.5-turbo-1106" || model === "gpt-4" || model === "gpt-4-32k" || model === "gpt-4-1106-preview" ) ? "Summarize this:\n" + selectedCode : selectedCode + "\n");
     } else {
         vscode.window.showErrorMessage('Please select the text to summaryze to get response from OpenAI');
         return;

@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	
-	let disposableSummarizeText = vscode.commands.registerCommand('jgwilldevia.summarizeText', async () => {
+	let disposableSummarizeText = vscode.commands.registerCommand('giadeveloper.summarizeText', async () => {
 		await summarizeText();
 });
 

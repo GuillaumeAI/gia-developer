@@ -27,7 +27,13 @@
     "ai",
     "image"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:giadeveloper.changeAPIKey",
+    "onCommand:giadeveloper.startConversation",
+    "onCommand:giadeveloper.explainCode",
+    "onCommand:giadeveloper.findProblem",
+    "onCommand:giadeveloper.generateImage"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -42,6 +48,10 @@
       {
         "command": "giadeveloper.explainCode",
         "title": "GIA Developer: Explain the code"
+      },
+      {
+        "command": "giadeveloper.summarizeText",
+        "title": "GIA Developer: Summarize Text"
       },
       {
         "command": "giadeveloper.findProblem",
@@ -65,9 +75,14 @@
           "group": "giadeveloper-menu-group@2"
         },
         {
-          "command": "giadeveloper.findProblem",
+          "command": "giadeveloper.summarizeText",
           "when": "editorHasSelection",
           "group": "giadeveloper-menu-group@3"
+        },
+        {
+          "command": "giadeveloper.findProblem",
+          "when": "editorHasSelection",
+          "group": "giadeveloper-menu-group@4"
         }
       ]
     },
