@@ -12,6 +12,10 @@
  */
 export enum Models {
     ChatGPT = "gpt-3.5-turbo",
+    ChatGPTturbo1106 = "gpt-3.5-turbo-1106",
+    ChatGP4 = "gpt-4",
+    ChatGP4k32 = "gpt-4-32k",
+    ChatGP4p1106 = "gpt-4-1106-preview",
     Codex = "code-davinci-002",
 }
 
