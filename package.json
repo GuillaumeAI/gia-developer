@@ -81,10 +81,18 @@
           "default": "gpt-turbo",
           "enum": [
             "gpt-turbo",
+            "gpt-3.5-turbo-1106",
+            "gpt-4",
+            "gpt-4-32k",
+            "gpt-4-1106-preview",
             "codex"
           ],
           "enumItemLabels": [
             "ChatGPT - Free (Limited), Paid",
+            "GPT-3.5 Turbo - 16K",
+            "GPT-4 - 8K",
+            "GPT-4 - 32K",
+            "GPT-4 Turbo - 128k latest GPT-4",
             "Codex - Free"
           ],
           "enumDescriptions": [
